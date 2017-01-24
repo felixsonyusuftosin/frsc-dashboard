@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { LeftbarComponent } from './leftbar/leftbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    TopbarComponent
+    TopbarComponent,
+    LeftbarComponent
   ],
   imports: [
     BrowserModule,
