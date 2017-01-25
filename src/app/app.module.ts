@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { LeftbarComponent } from './leftbar/leftbar.component';
+import { BodyComponent } from './body/body.component';
+import { WidgetComponent } from './widget/widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     TopbarComponent,
-    LeftbarComponent
+    LeftbarComponent,
+    BodyComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,50 @@
+.rowwidget{width:100%; font-size:0px; height:200px;  padding-left:40px; box-sizing:border-box; overflow:hidden; }
+.widgets{width:22.5%; margin-right:2.5%; height:100%; background:#30333C; overflow:hidden; display:inline-block; border-radius:3px 3px 0px 0px;}
+.bdy{height:98%;  font-size:0px;width:100%; box-sizing:border-box; overflow:hidden;}
+.cio,.txt{display:inline-block; box-sizing:border-box; vertical-align:top; height:100%; overflow:hidden; }
+.cio{width:40%; padding-left:10px;  box-shadow:none!important; border:none!important; text-align:center; line-height:196px; height:196px;} 
+.txt{width:60%; height:100%; text-align:right; display:inline-block; padding-right:10px;}
+.cio .i{height:117px; overflow:hidden; line-height:117px; margin-top:39.5px; border:none!important; width:117px; border-radius:50%; box-shadow:none!important; font-size:50px; text-align:center; color:rgba(255,255,255,0.8); background:rgba(255,255,255,0.1);}
+.i i{line-height:117px; border:none!important;  overflow:hidden;}
+.style{height:2%; width:100%;  overflow:hidden;} 
+.toptext{margin-top:60px; color:rgba(255,255,255,0.3); text-transform:uppercase; overflow:hidden; font-size:16px; font-family:Lato; word-spacing:2px; line-height:16px; display:block; }
+.numbers{color:#fff;  font-family:Lato; font-size:64px; font-weight:lighter; overflow:hidden; display:block; }
+
+
+/*reponsive.................................................................................................................................. */
+
+@media only screen
+and (min-width : 1025px) { /* Desktop */
+
+/*forms */
+
+}
+/*......................desktop ends..................*/
+/*.......................mobile.....................*/
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {/*mobile*/
+.rowwidget{padding: 20px 20px; height:auto; overflow:hdden;}
+.widgets{width:100%; height:200px; margin-bottom:20px;}
+/*.cio{height:96px; line-height:96px;} .cio .i{height:58.5px; line-height:58.5px; width:58.5px; margin-top:19.25px; font-size:25px;}
+.i i{line-height:58.5px;}
+.toptext{margin-top:30px;} .numbers{font-size:32px; }*/
+
+}
+/*...............mobile ends..........................*/
+/*................................tabs......................*/
+@media only screen
+and (min-device-width : 481px) 
+and (max-device-width : 1024px){ /* Tablet */
+.rowwidget{height:100px;}
+.rowwidget{padding-left:10px;}
+}
+/*.................tabs end.......................*/
+/*.....................large screens..............*/
+@media only screen
+and (min-width : 1824px) {/*largescreens*/
+
+}
+/*....................largescreen ends................*/
+
+/* responsive ....................ends........................................*/
