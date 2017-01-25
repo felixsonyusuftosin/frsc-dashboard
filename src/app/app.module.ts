@@ -8,6 +8,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { LeftbarComponent } from './leftbar/leftbar.component';
 import { BodyComponent } from './body/body.component';
 import { WidgetComponent } from './widget/widget.component';
+import { OperationComponent } from './operation/operation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WidgetComponent } from './widget/widget.component';
     TopbarComponent,
     LeftbarComponent,
     BodyComponent,
-    WidgetComponent
+    WidgetComponent,
+    OperationComponent
   ],
   imports: [
     BrowserModule,

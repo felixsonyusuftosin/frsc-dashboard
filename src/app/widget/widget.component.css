@@ -8,7 +8,7 @@
 .i i{line-height:117px; border:none!important;  overflow:hidden;}
 .style{height:2%; width:100%;  overflow:hidden;} 
 .toptext{margin-top:60px; color:rgba(255,255,255,0.3); text-transform:uppercase; overflow:hidden; font-size:16px; font-family:Lato; word-spacing:2px; line-height:16px; display:block; }
-.numbers{color:#fff;  font-family:Lato; font-size:64px; font-weight:lighter; overflow:hidden; display:block; }
+.numbers{color:#fff;  font-family:Lato; font-size:64px; width:100%;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:lighter; overflow:hidden; display:block; }
 
 
 /*reponsive.................................................................................................................................. */
@@ -38,6 +38,10 @@ and (min-device-width : 481px)
 and (max-device-width : 1024px){ /* Tablet */
 .rowwidget{height:100px;}
 .rowwidget{padding-left:10px;}
+.cio{height:96px; width:33%; line-height:96px;} .cio .i{height:40px; line-height:40px; width:40px; margin-top:20px; font-size:25px;}
+.i i{line-height:40px; font-size:16px;} .txt{width:67%;}
+.toptext{margin-top:20px; font-size:12px;} .numbers{font-size:20px; }
+/*.numbers{font-size:55px;}*/
 }
 /*.................tabs end.......................*/
 /*.....................large screens..............*/
