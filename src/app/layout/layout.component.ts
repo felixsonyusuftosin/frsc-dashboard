@@ -3,6 +3,7 @@ import { TopbarComponent  } from '../topbar/topbar.component';
 import { LeftbarComponent  } from '../leftbar/leftbar.component';
 import { BodyComponent  } from '../body/body.component';
 import { OperationComponent  } from '../operation/operation.component';
+
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',

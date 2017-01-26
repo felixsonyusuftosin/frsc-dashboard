@@ -1,9 +1,10 @@
 .row1{width:100%; font-size:0px; margin-top:50px; margin-bottom:20px;  height:700px; padding:10px 20px; font-size:0px;  padding-left:40px; box-sizing:border-box; overflow:hidden;}
 .row2{width:100%; font-size:0px; height:80px; padding:10px 20px;   padding-left:40px; box-sizing:border-box; overflow:hidden;}
+.row3{width:100%; font-size:0px; height:500px; padding:10px 20px;   padding-left:40px; box-sizing:border-box; overflow:hidden;}
 .map{display:inline-block; box-sizing:border-box; overflow:hidden; overflow:hidden;  background:#30333C; width:68%; margin-right:2%; height:700px; }
 .right{display:inline-block; width:30%; overflow:hidden; height:700px;}
 .display{width:100%; height:330px; overflow:hidden; display:inline-block; background:#30333C; border-radius:3px 3px 0px 0px; } .mbot{margin-bottom:40px;}
-.tabs{display:inline-block; color:rgba(255,255,255,0.6);  cursor:pointer; border-radius:3px; padding:0px 10px; padding-right:20px; box-sizing:border-box; overflow:hidden; height:100%;  background:#30333C; }
+.tabs, .ltabs{display:inline-block; color:rgba(255,255,255,0.6);  cursor:pointer; border-radius:3px; padding:0px 10px; padding-right:20px; box-sizing:border-box; overflow:hidden; height:100%;  background:#30333C; }
 .tabs:hover{background:#282A31; color:#fff; }
 .width32{width:33%; } .width34{width:34%;} .mr{margin-right:2%;} .ml{margin-left:2%;}.width30{width:30%; float:right;}
 .spanl,.spanr{display:inline-block; height:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-family:Open Sans; line-height:60px;}
@@ -14,7 +15,23 @@
 .rightr{color:rgba(255,255,255,0.6); font-weight:lighter; font-size:20px; cursor:pointer; float:right;}
 .rightr:hover{color:#fff;}
 #map{width:100%; height:628px; margin-top:2px; background:rgba(255,255,255,0.1);}
-
+.pad{padding:0px 20px; }
+.thumbnail{display:inline-block; vertical-align:top; height:50px; margin-top:15px; background-size:cover; overflow:visible; background-position:center; width:50px; border-radius:50%;}
+.alerts{display:inline-block; width:16px; height:16px; font-size:12px; line-height:16px; border-radius:50%; color:#fff; text-align:center; background:#FF3BB2; margin-top:0px; margin-left:42px; }
+.th{height:80px;}
+.namelist{display:inline-block;  padding-top:10px;  vertical-align:top;font-family:Open Sans;  padding-left:20px; box-sizing:border-box; max-width:70%; height:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.toplist{font-size:15px; height:22px; line-height:22px; color:rgba(255,255,255,0.7);  display:block;}
+.bottomlistt{font-size:12px;  height:18px; line-height:18px; color:rgba(255,255,255,0.3); display:block; }
+.rightlist{max-width:25%; display:inline-block;  height:100%; line-height:80px; color:rgba(255,255,255,0.6);  font-size:25px; float:right;  overflow:hidden;vertical-align:top; }
+.rightlist i{display:inline-block; cursor:pointer!important; margin-left:10px;}
+.rightlist i:hover{color:#fff;}
+.green{background-color:#60D066;  display:inline-block; vertical-align:top; margin-top:8px; width:8px; height:8px; border-radius:50%; margin-left:20px; }
+.nobd{border-bottom:none;} 
+.colorl{width:10%; height:60px; line-height:60px; margin-top:10px;  color:rgba(255,255,255,0.3); display:inline-block; padding-left:10px; font-size:20px; box-sizing:border-box; border-left:solid 4px #FF5988;}
+.iconinput, .textinput{width:85%;  overflow:hidden; margin-right:5%; margin-top:20px; height:40px; box-sizing:border-box; display:inline-block; border:solid 1px rgba(255,255,255,0.3); border-radius:3px; line-height:60px; }
+input:focus{border-style:none;} .bluel{border-color:#4C4AAC;}
+.iconinput{width:10%; margin:0px; text-align:center; line-height:40px; overflow:hidden; height:40px; font-size:15px; color:rgba(255,255,255,0.3); line-height:40px; }
+.textinput input{background:none; border:none;  line-height:20px; width:100%; height:40px;  height:100%; text-indent:20px; margin-top:-10px; color:rgba(255,255,255,0.3); font-family:Open Sans; font-size:14px;}
 /*reponsive.................................................................................................................................. */
 
 @media only screen
@@ -28,14 +45,18 @@ and (min-width : 1025px) { /* Desktop */
 @media only screen
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {/*mobile*/
-.row1,.row2{padding: 0px 20px; margin-top:10px;}
+.row1,.row2,.row3{padding: 0px 20px; margin-top:10px;}
 .row2{height:60px;}
+.ltab{display:block; margin-top:5px;}
 .spanl,.spanr{line-height:60px;}
+.row3{margin-top:20px; height:auto; min-height:500px;}
 .map{width:100%; margin-bottom:20px;}
+.ltabs{height:400px; margin-bottom:20px;}
 #map{height:638px;}
 .mbot{margin-bottom:20px;}
 .right{width:100%;}
-.width32{width:100%;} .mr{margin:0px;}
+.width32, .width30{width:100%;} .mr{margin-right:0px;}
+.mapcover{padding:0px 5px;} .maptop{padding:5px;}
 /*.cio{height:96px; line-height:96px;} .cio .i{height:58.5px; line-height:58.5px; width:58.5px; margin-top:19.25px; font-size:25px;}
 .i i{line-height:58.5px;}
 .toptext{margin-top:30px;} .numbers{font-size:32px; }*/
@@ -46,8 +67,8 @@ and (max-device-width : 480px) {/*mobile*/
 @media only screen
 and (min-device-width : 481px) 
 and (max-device-width : 1024px){ /* Tablet */
-
-.row1, .row2{padding-left:10px;}
+.row3{height:300px;}
+.row1, .row2, .row3{padding-left:10px;}
 #map{height:428px; margin-top:2px;}
 .row1{height:500px;} .map{height:500px;} .right{height:500px;} .display{height:245px; }.mbot{margin-bottom:10px;}
 /*.numbers{font-size:55px;}*/

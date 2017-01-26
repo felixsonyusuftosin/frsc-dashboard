@@ -48,7 +48,7 @@ body{font-size:11px; background-color:#212228; width:100%; height:100%; margin:0
 .leftborder{border-left:solid 1px rgba(255,255,255,0.2);}
 .norightborder{border-right:none;}
 .topbari:hover{color:#fff; } 
-.topbar div{display:inline-block; float:right; height:100%; padding:10px 40px 10px 10px; box-sizing:border-box;} 
+.topbar div{display:inline-block; float:right; height:100%; padding:10px 40px 10px 10px; box-sizing:border-box;}  .me{background-image:url('./assets/me.jpg'); }
 .topbar .round{ display:inline-block; margin-right:10px; height:50px; width:50px; border-radius:50%; background-size:cover; background-position:center; background-image:url('./assets/me.jpg'); }
 .topbar .square{height:100%; color: rgba(255,255,255,0.2); overflow:hidden!important; font-weight:600;  padding: 6px 3px; box-sizing:border-box; font-size:12px; display:inline-block;   line-height:15px;}
 .topbar .arrow{font-size:15px!important;}
