@@ -10,7 +10,7 @@ import { LeftbarComponent } from './leftbar/leftbar.component';
 import { BodyComponent } from './body/body.component';
 import { WidgetComponent } from './widget/widget.component';
 import { OperationComponent } from './operation/operation.component';
-import { PopoverModule } from 'ng2-pop-over-iefix';
+
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { PopoverModule } from 'ng2-pop-over-iefix';
     BrowserModule,
     FormsModule,
     HttpModule,
-    PopoverModule
-      ],
+    
+  ],
   providers: [MapObjectService],
   bootstrap: [AppComponent]
 })
