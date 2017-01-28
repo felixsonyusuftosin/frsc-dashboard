@@ -1,9 +1,22 @@
-<div class = "row1">
-  <div class = "map">
+<div class = "row1" id="row">
+  <div class = "map" >
     <div class = "mapcover">
     <div class= "maptop"><span class = "leftr">Lorem Ipsum <span class = "h">Ipsomas master</span></span><span class = "rightr"><i class = "fa fa-ellipsis-v"></i></span></div>
     </div>
-      <div id = "map"></div>
+      <div id = "map">
+        
+          </div>
+   <div id = "mapinset"  (click) = "switchbase();helpPO.show($event)" ></div>
+   <pop-over #helpPO>
+   <div class="pp">
+       <div class="my-own-title">
+           Title goes here
+       </div>
+       <div class="my-content">
+           Content goes here
+       </div>
+   </div>
+</pop-over>
     </div>
   <div class = "right">
     <div class = "display mbot">

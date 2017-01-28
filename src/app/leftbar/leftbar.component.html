@@ -1,33 +1,14 @@
-<div class = "row leftrow dark3 hidden  bb light1f ">
-  <i class = " fl centertext fa fa-th-large bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-minus smalli fr"></i>
-</div>
-<div class = "row inrow dark3 hidden  bb light1f">
-<div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div>
-</div>
-<div class = "row inrow dark3 hidden  bb light1f">
-<div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div>
-</div>
-<div class = "row inrow dark3 hidden  bb light1f">
-<div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div>
-</div>
-<div class = "row inrow dark3 hidden  bb light1f">
-<div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-envelope-o bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-calendar-o bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-area-chart bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-file-image-o bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-map-marker bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
-<div class = "row leftrow dark3 hidden  bb light1f">
-  <i class = " fl centertext fa fa-folder-o bigi col col1" ></i><div class = "col col1"></div><div class = " col col7 truncate">Lorem Ipsum</div><i class =" col col1 fa fa-plus smalli fr"></i>
-</div>
+
+
+
+<div class = "row"  *ngFor = "let bar of bars">
+<div class = "row leftrow dark3 hidden  bb light1f " (click) = "openup(bar.click)">
+    <i class = " fl centertext fa  bigi col col1" [ngClass] = "bar.icon" ></i>
+    <div class = "col col1"></div><div class = " col col7 truncate">{{bar.name}}</div><i class =" col col1 fa smalli fr" *ngIf = "bar.children.length > 0" [ngClass] = "{'fa-plus':!bar.minus, 'fa-minus':bar.minus}"></i>
+  </div>
+  <div class  = "row" *ngIf = "bar.children.length > 0 &amp;&amp; bar.onfoc">
+  <div class = "row inrow dark3 hidden  bb light1f" *ngFor = "let i of bar.children">
+  <div class = "col col1"></div><div class = " col col7 truncate">{{i.name}}</div>
+  </div>
+  </div><!--end of children row-->
+  </div><!--end of row-->

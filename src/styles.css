@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html{width:100%; height:100%; padding:0px; margin:0px; box-sizing:border-box; }
 body{font-size:11px; background-color:#212228; width:100%; height:100%; margin:0px;  box-sizing:border-box; padding:0px; overflow-x:hidden; }
-*{overflow-x:hidden;}
+/**{overflow-x:hidden;}*/
 /* ................color.................   */
 
 .darkest{background-color:#212228;}.dark1{background-color:#24262D;} .dark15{background-color:#282A31} .dark2{background-color:#212228;} .dark3{background-color:#30333C;} .dark4{background-color:#494C55;}
@@ -34,7 +34,7 @@ body{font-size:11px; background-color:#212228; width:100%; height:100%; margin:0
 .margin{margin-top:10px;} .largemargin{margin-top:30px;} .fullheight{height:100}
 
 /*.....arrangement ......*/
-.topbar{height:70px; overflow:hidden!important; box-sizing:border-box;  font-family:Open Sans; font-size:0px;width:100%; z-index:10; background:#24262D; position:fixed; padding:0px; margin:0px; box-sizing:border-box;}
+.topbar{height:70px; overflow:visible; box-sizing:border-box;  font-family:Open Sans; font-size:0px;width:100%; z-index:10; background:#24262D; position:fixed; padding:0px; margin:0px; box-sizing:border-box;}
 .leftbar{height:100%; z-index:5; padding-top:71px; width:15%;  position:fixed;  margin:0; box-sizing:border-box;}
 .body{margin-left:15%; margin-top:70px; padding:8px; width:85%;  height:auto; min-height:50%; box-sizing:border-box;}
 .block{display:block; width:100%;} .hidden{overflow:hiden;}
@@ -48,7 +48,7 @@ body{font-size:11px; background-color:#212228; width:100%; height:100%; margin:0
 .leftborder{border-left:solid 1px rgba(255,255,255,0.2);}
 .norightborder{border-right:none;}
 .topbari:hover{color:#fff; } 
-.topbar div{display:inline-block; float:right; height:100%; padding:10px 40px 10px 10px; box-sizing:border-box;}  .me{background-image:url('./assets/me.jpg'); }
+.topbar .div{display:inline-block; float:right; height:100%; padding:10px 40px 10px 10px; box-sizing:border-box;}  .me{background-image:url('./assets/me.jpg'); }
 .topbar .round{ display:inline-block; margin-right:10px; height:50px; width:50px; border-radius:50%; background-size:cover; background-position:center; background-image:url('./assets/me.jpg'); }
 .topbar .square{height:100%; color: rgba(255,255,255,0.2); overflow:hidden!important; font-weight:600;  padding: 6px 3px; box-sizing:border-box; font-size:12px; display:inline-block;   line-height:15px;}
 .topbar .arrow{font-size:15px!important;}
@@ -109,5 +109,11 @@ html{width:100%; background:#d2d2d2;}
 /*....................largescreen ends................*/
 
 /* responsive ....................ends........................................*/
-
+/*leaflet*/
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+  opacity:0!important; width:0px; height:0px!important;
+}
+.leaflet-google-layer{z-index: 10 !important;}.leaflet-map-pane{ z-index: 1000;}.leaflet-google-layer{z-index: 10 !important;}.leaflet-map-pane{ z-index: 100;}
+#map{width:100%; height:100%;} /*.leaflet-pane, .leaflet-layer, .leaflet-tile-container{width:100%; height:100%;}*/
+.easy-button-button .button-state{overflow:hidden;}
 

@@ -1,6 +1,8 @@
 .leftrow,.inrow{height:55px; line-height:55px; cursor:pointer; font-size:12px; font-family:Open Sans; box-sizing:border-box; overflow:hidden; border-bottom:solid 1px rgba(255,255,255,0.08);}
 .leftrow:hover{background-color:#24262D;}
 .inrow{background-color:#24262D;}
+
 .leftrow .col, .inrow .col{height:100%;  box-sizing:border-box; overflow:hidden; }
 .leftrow i, .inrow i{line-height:55px; overflow:visible!important;  box-sizing:border-box; overflow:hidden; }
 .bigi{font-size:20px; box-sizing:border-box; padding-left:10px;} .smalli{font-size:12px;}
+.inrow:hover{color:#fff; }
